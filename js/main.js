@@ -114,7 +114,7 @@ function fngetOrderCnfm()
     document.getElementById("divPDtl").innerHTML = localStorage.getItem('Fname') + " " + localStorage.getItem('Lname') + "!!!!";
     i = document.location.href.split('?')[1].split('=')[1];
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "pages/guitar.json" , true);
+    xhttp.open("GET" , "guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
@@ -122,7 +122,7 @@ function fngetOrderCnfm()
         {
             var varJasonData = JSON.parse(xhttp.responseText);
             var obj = varJasonData.allProducts[i];
-            document.getElementById("imgOrdrCnfm").src = obj.image_path;
+            document.getElementById("imgOrdrCnfm").src = "../" + obj.image_path;
             document.getElementById("divOrdrCnfm").innerHTML = "<b>Description : </b>" + obj.product_description;
         }
     };
