@@ -38,7 +38,7 @@ function fngetDataChkOut()
     i = document.location.href.split('?')[1].split('=')[1];
     document.getElementById("divHiddenChkout").innerHTML = i;
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "pages/guitar.json" , true);
+    xhttp.open("GET" , "../pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
