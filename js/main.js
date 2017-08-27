@@ -31,7 +31,7 @@ function fnGetData()
 }
 function fnCallBuyerDtl()
 {
-    window.location.href = 'checkout.html?param=' + document.getElementById('divHidden').innerHTML;
+    window.location.href = 'pages/checkout.html?param=' + document.getElementById('divHidden').innerHTML;
 }
 function fngetDataChkOut()
 {
