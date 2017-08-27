@@ -9,7 +9,7 @@ function fnGetDate()
 function fnGetData()
 {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "guitar.json" , true);
+    xhttp.open("GET" , "pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
@@ -38,7 +38,7 @@ function fngetDataChkOut()
     i = document.location.href.split('?')[1].split('=')[1];
     document.getElementById("divHiddenChkout").innerHTML = i;
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "guitar.json" , true);
+    xhttp.open("GET" , "pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
@@ -114,7 +114,7 @@ function fngetOrderCnfm()
     document.getElementById("divPDtl").innerHTML = localStorage.getItem('Fname') + " " + localStorage.getItem('Lname') + "!!!!";
     i = document.location.href.split('?')[1].split('=')[1];
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "guitar.json" , true);
+    xhttp.open("GET" , "pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
@@ -130,7 +130,7 @@ function fngetOrderCnfm()
 function fnGetPrevData()
 {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "guitar.json" , true);
+    xhttp.open("GET" , "pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
@@ -159,7 +159,7 @@ function fnGetPrevData()
 function fnGetNextData()
 {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET" , "guitar.json" , true);
+    xhttp.open("GET" , "pages/guitar.json" , true);
     xhttp.send();
     xhttp.onreadystatechange = function ()
     {
