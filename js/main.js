@@ -46,7 +46,7 @@ function fngetDataChkOut()
         {
             var varJasonData = JSON.parse(xhttp.responseText);
             var obj = varJasonData.allProducts[i];
-            document.getElementById("imgchkout").src = obj.image_path;
+            document.getElementById("imgchkout").src = "./" + obj.image_path;
             document.getElementById("divDescChkOut").innerHTML = "<b>Description : </b>" + obj.product_description;
         }
     };
